@@ -1,14 +1,19 @@
-.main {
-    background-color: #b1f2ff;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url('pic/header.png');
-    background-size: cover;
+body {
+    margin: 0;
 }
 
-body {
-    margin: 0px;
+.main {
+    background-color: #b1f2ff;
+    background-image: url('pic/header.png'), url('pic/flag.png');
+    background-size: cover, contain;
+    background-position: center, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+    padding-bottom: 30px; 
 }
 
 .header {
@@ -17,36 +22,74 @@ body {
     font-family: 'Noto Sans Math', sans-serif;
     letter-spacing: 0.32em;
     font-size: 50px;
-    margin: 75px 20px;
+    margin: 20px 0;
+}
+/* efek border nde teks hackaton */
+.header strong {
+    position: relative;
+    display: inline-block;
+    border: 2px solid transparent; 
+    padding: 5px 15px;
+    background-color: white;
+    z-index: 1; 
+    font-size: inherit;
+    transition: border-color 0.3s ease-in-out; 
+}
+/* efek zoom in zoom out e mbe seng ndisor hover pas mouse melbu border*/
+.header strong::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid #333; 
+    z-index: -1; 
+    transform: scale(1); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.header strong:hover {
+    border-color: #333; 
+}
+
+.header strong:hover::before {
+    transform: scale(1.05); 
+}
+
+.title {
+    font-size: 45px;
+    text-align: center;
+    margin: 100px 20px 0;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: white;
+    width: fit-content; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .explain {
     text-align: left;
-    margin: 10px 5rem;
-}
-
-.middleText {
-    font-size: 20px;
-}
-.title {
-    font-size: 75px;
-    text-align: center;
-    margin: 100px 20px 30px 20px;
-}
-
-.list {
-    list-style-type: square;
-    font-size: 20px;
-}
-
-li {
-    font-size: 20px;
+    margin: 10px 2rem; 
+    border: 2px solid black;
+    padding: 20px;
+    background-color: white;
+    display: flex; 
+    flex-direction: column; 
 }
 
 .button {
     text-align: center;
     margin: 30px;
+    transform: translateY(10px); 
 }
+
+.middleText {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
 
 .pushable {
     background: hsl(340deg 100% 32%);
@@ -67,6 +110,3 @@ li {
     transform: translateY(-6px);
 }
 
-.pushable:active .front {
-    transform: translateY(-2px);
-}
