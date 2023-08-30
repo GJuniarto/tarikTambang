@@ -1,0 +1,72 @@
+.main {
+    background-color: #b1f2ff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('pic/header.png');
+    background-size: cover;
+}
+
+body {
+    margin: 0px;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    font-family: 'Noto Sans Math', sans-serif;
+    letter-spacing: 0.32em;
+    font-size: 50px;
+    margin: 75px 20px;
+}
+
+.explain {
+    text-align: left;
+    margin: 10px 5rem;
+}
+
+.middleText {
+    font-size: 20px;
+}
+.title {
+    font-size: 75px;
+    text-align: center;
+    margin: 100px 20px 30px 20px;
+}
+
+.list {
+    list-style-type: square;
+    font-size: 20px;
+}
+
+li {
+    font-size: 20px;
+}
+
+.button {
+    text-align: center;
+    margin: 30px;
+}
+
+.pushable {
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+.front {
+    display: block;
+    padding: 20px 50px;
+    border-radius: 12px;
+    font-size: 1.50rem;
+    letter-spacing: 8px;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
+}
