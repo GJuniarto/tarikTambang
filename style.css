@@ -113,3 +113,44 @@ body {
 .pushable:active .front {
     transform: translateY(-2px);
 }
+
+.maiiin {
+    display: flex;
+  }
+
+  .witjambe {
+    display: flex;
+    justify-content: center;
+  }
+  .img1 {
+    border: 1px solid #f00;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+  }
+  .orangnya {
+    display: flex;
+    justify-content: center;
+  }
+  .img2 {
+    border: 1px solid #0f0;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0px;
+    left: 9px;
+    width: 100px;
+  }
+  .orangnya2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0cm;
+  }
+  .img3 {
+    border: 1px solid #0f0;
+    position: relative;
+    z-index: 2;
+    top: -285px;
+    left: -11px;
+    width: 100px;
+    margin-bottom: 0px;
+  }
