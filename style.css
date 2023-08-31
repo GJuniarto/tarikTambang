@@ -201,3 +201,17 @@ body {
     margin: 30px;
     transform: translateY(10px);
 }
+
+#countdown {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.50rem;
+    letter-spacing: 8px;
+    background: hsl(45, 82%, 45%);
+    color: white;
+}
+
+.vidwinresult {
+    display: flex;
+    justify-content: center;
+}
