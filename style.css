@@ -165,3 +165,39 @@ body {
 .game {
     margin-top: 15rem;
 }
+
+.winner-result {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Noto Sans Math', sans-serif;
+}
+
+.pushable2 {
+    background: hsl(240, 100%, 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+
+.front2 {
+    display: block;
+    padding: 20px 50px;
+    border-radius: 12px;
+    font-size: 1.50rem;
+    letter-spacing: 8px;
+    background: hsl(239, 100%, 47%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.pushable2:active .front {
+    transform: translateY(-2px);
+}
+
+.buttonReset {
+    text-align: center;
+    margin: 30px;
+    transform: translateY(10px);
+}

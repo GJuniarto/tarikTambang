@@ -1,9 +1,14 @@
 const buttonStart = document.querySelector(".pushable");
+const buttonReset = document.querySelector(".pushable2");
+
+
+const homePage = document.querySelector('.home');
+const gamePage = document.querySelector('.game');
+const body = document.querySelector('body');
+const winner = document.querySelector('.winner');
+const spanWinnerResult = document.querySelector('.winner-result');
 
 buttonStart.addEventListener('click', () => {
-    const homePage = document.querySelector('.home');
-    const gamePage = document.querySelector('.game');
-    const body = document.querySelector('body');
     homePage.style.display = 'none';
     gamePage.style.display = 'block';
 
@@ -12,9 +17,13 @@ buttonStart.addEventListener('click', () => {
             let awal = document.querySelector(".img2").style.top
             let numb = awal.replace(/\D+/g, "")
             let a = (-numb)
-            a += (-15)
             if (a < (-480)) {
-                alert("Red Team menaang")
+                gamePage.style.display = 'none';
+                spanWinnerResult.innerText = 'Red Team Win';
+                spanWinnerResult.style.color = 'red';
+                winner.style.display = 'block';
+            } else {
+                a += (-15)
             }
             let hasil = a.toString() + "px"
             document.querySelector(".img2").style.top = hasil
@@ -23,9 +32,13 @@ buttonStart.addEventListener('click', () => {
             let awal = document.querySelector(".img3").style.top
             let numb = awal.replace(/\D+/g, "")
             let a = (-numb)
-            a += (-15)
-            if (a < (-588)) {
-                alert("Blue Team menaang")
+            if (a < (-620)) {
+                gamePage.style.display = 'none';
+                spanWinnerResult.innerText = 'Blue Team Win';
+                spanWinnerResult.style.color = 'blue';
+                winner.style.display = 'block';
+            } else {
+                a += (-15)
             }
             let hasil = a.toString() + "px"
             document.querySelector(".img3").style.top = hasil
@@ -34,6 +47,10 @@ buttonStart.addEventListener('click', () => {
 
 })
 
+buttonReset.addEventListener('click', () => {
+    winner.style.display = 'none';
+    homePage.style.display = 'block';
+})
 
 // aaaa.addEventListener("click", function() {
 //     let awal = document.querySelector(".img2").style.top
