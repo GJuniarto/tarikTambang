@@ -11,9 +11,9 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: space-between; 
-    padding-bottom: 30px; 
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
 }
 
 .header {
@@ -24,17 +24,19 @@ body {
     font-size: 50px;
     margin: 20px 0;
 }
+
 /* efek border nde teks hackaton */
 .header strong {
     position: relative;
     display: inline-block;
-    border: 2px solid transparent; 
+    border: 2px solid transparent;
     padding: 5px 15px;
     background-color: white;
-    z-index: 1; 
+    z-index: 1;
     font-size: inherit;
-    transition: border-color 0.3s ease-in-out; 
+    transition: border-color 0.3s ease-in-out;
 }
+
 /* efek zoom in zoom out e mbe seng ndisor hover pas mouse melbu border*/
 .header strong::before {
     content: "";
@@ -43,18 +45,18 @@ body {
     left: -10px;
     right: -10px;
     bottom: -10px;
-    border: 2px solid #333; 
-    z-index: -1; 
-    transform: scale(1); 
-    transition: transform 0.3s ease-in-out; 
+    border: 2px solid #333;
+    z-index: -1;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .header strong:hover {
-    border-color: #333; 
+    border-color: #333;
 }
 
 .header strong:hover::before {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .title {
@@ -64,30 +66,30 @@ body {
     border: 2px solid black;
     padding: 20px;
     background-color: white;
-    width: fit-content; 
-    margin-left: auto; 
-    margin-right: auto; 
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .explain {
     text-align: left;
-    margin: 10px 2rem; 
+    margin: 10px 2rem;
     border: 2px solid black;
     padding: 20px;
     background-color: white;
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
 }
 
 .button {
     text-align: center;
     margin: 30px;
-    transform: translateY(10px); 
+    transform: translateY(10px);
 }
 
 .middleText {
-    font-size: 24px; 
-    margin-bottom: 10px; 
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 
@@ -99,6 +101,7 @@ body {
     cursor: pointer;
     outline-offset: 4px;
 }
+
 .front {
     display: block;
     padding: 20px 50px;
@@ -116,41 +119,49 @@ body {
 
 .maiiin {
     display: flex;
-  }
+}
 
-  .witjambe {
+.witjambe {
     display: flex;
     justify-content: center;
-  }
-  .img1 {
+}
+
+.img1 {
     border: 1px solid #f00;
     position: relative;
     z-index: 1;
     justify-content: center;
-  }
-  .orangnya {
+}
+
+.orangnya {
     display: flex;
     justify-content: center;
-  }
-  .img2 {
+}
+
+.img2 {
     border: 1px solid #0f0;
     position: relative;
     z-index: 2;
     margin-bottom: 0px;
     left: 9px;
     width: 100px;
-  }
-  .orangnya2 {
+}
+
+.orangnya2 {
     display: flex;
     justify-content: center;
     margin-bottom: 0cm;
-  }
-  .img3 {
+}
+
+.img3 {
     border: 1px solid #0f0;
     position: relative;
     z-index: 2;
-    top: -285px;
     left: -11px;
     width: 100px;
     margin-bottom: 0px;
-  }
+}
+
+.game {
+    margin-top: 15rem;
+}
