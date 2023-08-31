@@ -48,8 +48,8 @@ buttonStart.addEventListener('click', () => {
 })
 
 buttonReset.addEventListener('click', () => {
-    winner.style.display = 'none';
-    homePage.style.display = 'block';
+    location.reload();
+
 })
 
 // aaaa.addEventListener("click", function() {
