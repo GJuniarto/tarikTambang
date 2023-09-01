@@ -127,7 +127,6 @@ body {
 }
 
 .img1 {
-    border: 1px solid #f00;
     position: relative;
     z-index: 1;
     justify-content: center;
@@ -139,7 +138,6 @@ body {
 }
 
 .img2 {
-    border: 1px solid #0f0;
     position: relative;
     z-index: 2;
     margin-bottom: 0px;
@@ -154,7 +152,6 @@ body {
 }
 
 .img3 {
-    border: 1px solid #0f0;
     position: relative;
     z-index: 2;
     left: -11px;
